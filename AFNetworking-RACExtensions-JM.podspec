@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 AFNetworking RAC 扩展
                        DESC
 
-  s.homepage         = 'https://github.com/刘俊臣/AFNetworking-RACExtensions-JM'
+  s.homepage         = 'https://github.com/bloack/AFNetworking-RACExtensions-JM.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '刘俊臣' => 'junchen.liu@jiamiantech.com' }
-  s.source           = { :git => 'https://github.com/刘俊臣/AFNetworking-RACExtensions-JM.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/bloack/AFNetworking-RACExtensions-JM.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -36,7 +36,7 @@ AFNetworking RAC 扩展
   #   'AFNetworking-RACExtensions-JM' => ['AFNetworking-RACExtensions-JM/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'AFNetworking-RACExtensions-JM/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 3.2'
   s.dependency 'ReactiveCocoa', '~> 2.0'
