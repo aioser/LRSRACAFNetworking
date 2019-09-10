@@ -1,0 +1,6 @@
+framework module AFNetworking_RACExtensions_JM {
+  umbrella header "AFNetworking-RACExtensions-JM-umbrella.h"
+
+  export *
+  module * { export * }
+}
