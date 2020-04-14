@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFNetworking-RACExtensions-JM'
-  s.version          = '4.0'
+  s.version          = '4.0.1'
   s.summary          = 'AFNetworking-RACExtensions-JM.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ AFNetworking RAC 扩展
   s.source           = { :git => 'https://github.com/bloack/AFNetworking-RACExtensions-JM.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'AFNetworking-RACExtensions-JM/Classes/**/*'
   
@@ -38,6 +38,6 @@ AFNetworking RAC 扩展
 
   s.public_header_files = 'AFNetworking-RACExtensions-JM/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~> 4.0'
   s.dependency 'ReactiveObjC'
 end

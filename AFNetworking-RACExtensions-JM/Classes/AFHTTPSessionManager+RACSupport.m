@@ -33,19 +33,19 @@ NSString *const RACAFNResponseObjectErrorKey = @"responseObject";
 	return [[RACSignal createSignal:^(id<RACSubscriber> subscriber) {
 		NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:path relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:nil];
 		
-		NSURLSessionDataTask *task = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-			if (error) {
-				NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
-        			if (responseObject) {
-					userInfo[RACAFNResponseObjectErrorKey] = responseObject;
-          			}
-        			NSError *errorWithRes = [NSError errorWithDomain:error.domain code:error.code userInfo:[userInfo copy]];
-				[subscriber sendError:errorWithRes];
-			} else {
-				[subscriber sendNext:RACTuplePack(responseObject, response)];
-				[subscriber sendCompleted];
-			}
-		}];
+        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            if (error) {
+                NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
+                    if (responseObject) {
+                    userInfo[RACAFNResponseObjectErrorKey] = responseObject;
+                      }
+                    NSError *errorWithRes = [NSError errorWithDomain:error.domain code:error.code userInfo:[userInfo copy]];
+                [subscriber sendError:errorWithRes];
+            } else {
+                [subscriber sendNext:RACTuplePack(responseObject, response)];
+                [subscriber sendCompleted];
+            }
+        }];
 		[task resume];
 		
 		return [RACDisposable disposableWithBlock:^{
@@ -73,21 +73,19 @@ NSString *const RACAFNResponseObjectErrorKey = @"responseObject";
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
 		NSURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:path relativeToURL:self.baseURL] absoluteString] parameters:parameters error:nil];
 		
-		NSURLSessionDataTask *task = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-			if (error) {
-                
-				NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
-                
-				if (responseObject) {
-					userInfo[RACAFNResponseObjectErrorKey] = responseObject;
-				}
-				NSError *errorWithRes = [NSError errorWithDomain:error.domain code:error.code userInfo:[userInfo copy]];
-				[subscriber sendError:errorWithRes];
-			} else {
-				[subscriber sendNext:RACTuplePack(responseObject, response)];
-				[subscriber sendCompleted];
-			}
-		}];
+        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+            if (error) {
+                NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
+                if (responseObject) {
+                    userInfo[RACAFNResponseObjectErrorKey] = responseObject;
+                }
+                NSError *errorWithRes = [NSError errorWithDomain:error.domain code:error.code userInfo:[userInfo copy]];
+                [subscriber sendError:errorWithRes];
+            } else {
+                [subscriber sendNext:RACTuplePack(responseObject, response)];
+                [subscriber sendCompleted];
+            }
+        }];
 		[task resume];
 		
 		return [RACDisposable disposableWithBlock:^{
