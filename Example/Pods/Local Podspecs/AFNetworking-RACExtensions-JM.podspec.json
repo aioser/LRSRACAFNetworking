@@ -1,6 +1,6 @@
 {
   "name": "AFNetworking-RACExtensions-JM",
-  "version": "1.0.2",
+  "version": "1.5",
   "summary": "AFNetworking-RACExtensions-JM.",
   "description": "AFNetworking RAC 扩展",
   "homepage": "https://github.com/bloack/AFNetworking-RACExtensions-JM.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/bloack/AFNetworking-RACExtensions-JM.git",
-    "tag": "1.0.2"
+    "tag": "1.5"
   },
   "platforms": {
     "ios": "8.0"
@@ -22,7 +22,7 @@
   "public_header_files": "AFNetworking-RACExtensions-JM/Classes/**/*.h",
   "dependencies": {
     "AFNetworking": [
-      "~> 3.2"
+
     ],
     "ReactiveObjC": [
 
