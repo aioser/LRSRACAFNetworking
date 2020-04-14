@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AFNetworking-RACExtensions-JM'
-  s.version          = '1.5'
+  s.version          = '4.0'
   s.summary          = 'AFNetworking-RACExtensions-JM.'
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,6 @@ AFNetworking RAC 扩展
 
   s.public_header_files = 'AFNetworking-RACExtensions-JM/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'AFNetworking', '~> 3.2'
+  s.dependency 'AFNetworking'
   s.dependency 'ReactiveObjC'
 end
