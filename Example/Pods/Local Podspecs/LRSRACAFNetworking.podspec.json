@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "LRSRACAFNetworking.",
   "description": "AFNetworking RAC 扩展",
-  "homepage": "https://github.com/bloack/AFNetworking-RACExtensions-JM.git",
+  "homepage": "https://github.com/aioser/LRSRACAFNetworking.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "刘俊臣": "junchen.liu@jiamiantech.com"
+    "junchen": "junchen.liu@jiamiantech.com"
   },
   "source": {
-    "git": "https://github.com/bloack/AFNetworking-RACExtensions-JM.git",
+    "git": "https://github.com/aioser/LRSRACAFNetworking.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -21,7 +21,7 @@
   "source_files": "LRSRACAFNetworking/Classes/**/*",
   "dependencies": {
     "AFNetworking": [
-      "~> 4.0"
+
     ],
     "ReactiveObjC": [
 

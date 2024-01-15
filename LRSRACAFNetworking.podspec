@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-AFNetworking RAC 扩展
+		AFNetworking RAC 扩展
                        DESC
 
   s.homepage         = 'https://github.com/aioser/LRSRACAFNetworking.git'
@@ -28,6 +28,7 @@ AFNetworking RAC 扩展
   s.source           = { :git => 'https://github.com/aioser/LRSRACAFNetworking.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.source_files = 'LRSRACAFNetworking/Classes/**/*'
-  s.dependency 'AFNetworking', '~> 4.0'
+	
+  s.dependency 'AFNetworking'
   s.dependency 'ReactiveObjC'
 end

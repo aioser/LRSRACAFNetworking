@@ -1,0 +1,6 @@
+framework module LRSRACAFNetworking {
+  umbrella header "LRSRACAFNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -24,7 +24,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## AFNetworking-RACExtensions-JM
+## LRSRACAFNetworking
 
 Copyright (c) 2019 刘俊臣 <junchen.liu@jiamiantech.com>
 

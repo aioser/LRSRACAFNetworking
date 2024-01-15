@@ -1,16 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@coding.jiamiantech.com:ce/LRSDevRepo/LRSRepos.git'
+
 use_frameworks!
 
 platform :ios, '11.0'
 
 target 'AFNetworking-RACExtensions-JM_Example' do
   pod 'LRSRACAFNetworking', :path => '../'
-
-  target 'AFNetworking-RACExtensions-JM_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
-  end
 end

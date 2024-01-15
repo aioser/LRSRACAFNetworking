@@ -1,64 +1,42 @@
 PODS:
-  - AFNetworking (4.0.0):
-    - AFNetworking/NSURLSession (= 4.0.0)
-    - AFNetworking/Reachability (= 4.0.0)
-    - AFNetworking/Security (= 4.0.0)
-    - AFNetworking/Serialization (= 4.0.0)
-    - AFNetworking/UIKit (= 4.0.0)
-  - AFNetworking-RACExtensions-JM (4.0):
-    - AFNetworking (~> 4.0)
-    - ReactiveObjC
-  - AFNetworking/NSURLSession (4.0.0):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.0)
-  - AFNetworking/Security (4.0.0)
-  - AFNetworking/Serialization (4.0.0)
-  - AFNetworking/UIKit (4.0.0):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Expecta (1.0.6)
-  - "Expecta+Snapshots (3.1.1)":
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - LRSRACAFNetworking (0.1.0):
+    - AFNetworking
+    - ReactiveObjC
   - ReactiveObjC (3.1.1)
-  - Specta (1.0.7)
 
 DEPENDENCIES:
-  - AFNetworking-RACExtensions-JM (from `../`)
-  - Expecta
-  - "Expecta+Snapshots"
-  - FBSnapshotTestCase
-  - Specta
+  - LRSRACAFNetworking (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-    - Expecta
-    - "Expecta+Snapshots"
-    - FBSnapshotTestCase
+  trunk:
     - ReactiveObjC
-    - Specta
 
 EXTERNAL SOURCES:
-  AFNetworking-RACExtensions-JM:
+  LRSRACAFNetworking:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
-  AFNetworking-RACExtensions-JM: 0fdf5f2d0734eaa51089c1c37244d1b5207b20b5
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  LRSRACAFNetworking: f8a04a202b5c25c1dd15505c74552f43bda21338
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: ea4efb2b069ef0ff7b6b5dcfccb48e83e2875c20
+PODFILE CHECKSUM: 3c5122076ea160f096b669100d8b5cd57f77742c
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.12.1
