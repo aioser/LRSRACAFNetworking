@@ -1,9 +1,9 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'AFNetworking-RACExtensions-JM_Example' do
-  pod 'AFNetworking-RACExtensions-JM', :path => '../'
+  pod 'LRSRACAFNetworking', :path => '../'
 
   target 'AFNetworking-RACExtensions-JM_Tests' do
     inherit! :search_paths
